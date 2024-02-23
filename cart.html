@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" alt="Website logo" width="125px" style="margin-top: 10px;">
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="ContactUs.html">Contact us</a></li>
+                    <li><a href="account.html">Account</a></li>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png"  alt="" width="30px" height="30px"></a> 
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+
+
+    <!-- -------------------------------Cart Item Details--------------------- -->
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>SubTotal</th>
+       </tr>
+       <tr>
+        <td><div class="cart-info">
+            <img src="images/buy-1.jpg">
+            <div>
+                <p>Red  T-shirt </p>
+                <small><br> Size : M 
+                     Color : Black</small>
+                                 
+                    <br><a href="" class="btnv">Remove</a>
+            </div>
+       
+        </div>
+       </td>
+        <td>250</td>
+        <td><input type="number" value="1"></td>
+        <td>250</td>
+   </tr>
+   <tr>
+    <td><div class="cart-info">
+        <img src="images/buy-2.jpg">
+        <div>
+            <p>Black Shoes by Camps </p> <small><br> Size : M &nbsp;&nbsp;&nbsp;&nbsp;
+                 Color : Black</small>
+                             
+                <br><a href="" class="btnv">Remove</a>
+        </div>
+   
+    </div>
+   </td>
+    <td>550</td>
+    <td><input type="number" value="1"></td>
+    <td>550</td>
+</tr>
+<tr>
+    <td><div class="cart-info">
+        <img src="images/buy-3.jpg">
+        <div>
+            <p>black Denim by H&V  T-shirt </p> 
+            <small><br> Size : M &nbsp;&nbsp;&nbsp;&nbsp;
+                 Color : Black</small>
+                             
+                <br><a href="" class="btnv">Remove</a>
+        </div>
+   
+    </div>
+   </td>
+    <td>450</td>
+    <td><input type="number" value="1"></td>
+    <td>450</td>
+</tr>
+      </table>
+      <div class="total-price">
+        <table>
+            <tr>
+                <td>SubTotal</td>
+                <td>1150</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>1500</td>
+            </tr>
+        </table>
+      </div>
+
+    </div>
+
+
+    <!-- -------------------------------Footer--------------------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Get the best of our platform on your mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="" />
+                    <p>Our Purpose Is To Sustainability Make the Pleasure and Benefits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook </li>
+                        <li>Twitter </li>
+                        <li>Instagram </li>
+                        <li>Youtube </li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Shubham Patil</p>
+        </div>
+    </div>
+    <!-- -------------------------------JS for Toggle Menu--------------------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px"
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+   
+</body>
+
+</html>
